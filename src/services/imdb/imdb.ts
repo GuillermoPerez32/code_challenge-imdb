@@ -13,11 +13,11 @@ export const imdbApi = createApi({
 },
 }),
   endpoints: (builder) => ({
-    getPopular: builder.query<MovieList, string>({
+    getPopular: builder.query<MovieList, number>({
       query: () => ({url: `movie/popular`, params: {api_key: imdb_api_key}}),
 
     }),
-    getMovieDetail: builder.query<MovieDetail, string>({
+    getMovieDetail: builder.query<MovieDetail, number>({
       query: (id) => ({url: `movie/${id}`, params: {api_key: imdb_api_key}}),
     }),
   }),

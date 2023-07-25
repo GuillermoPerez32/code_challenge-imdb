@@ -10,12 +10,13 @@ import { imdb_images_url } from "../../constants/imdb";
 
 interface Props {
   movie: Movie;
+  onClick: () => void;
 }
 
-export const MovieCard = ({ movie }: Props) => {
+export const MovieCard = ({ movie, onClick }: Props) => {
   return (
     <Card sx={{ minWidth: 200, maxWidth: 500 }}>
-      <CardActionArea onClick={() => console.log("clicked")}>
+      <CardActionArea onClick={() => onClick()}>
         <CardMedia
           component="img"
           height="140"
