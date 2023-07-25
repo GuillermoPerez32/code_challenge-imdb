@@ -1,7 +1,7 @@
 import { useGetPopularQuery } from "../../services/imdb/imdb";
 
 const MovieList = () => {
-  const { data } = useGetPopularQuery("populars");
+  const { data } = useGetPopularQuery("");
   return (
     <div>
       {data &&
