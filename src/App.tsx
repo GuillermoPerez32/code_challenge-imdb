@@ -12,7 +12,7 @@ function App() {
 
   return (
     <Box>
-      <Box height="55vh" bgcolor="gray">
+      <Box height="55vh" bgcolor="#384248">
         {movieDetailSection}
       </Box>
       <MovieList setMovieId={setMovieId} />
